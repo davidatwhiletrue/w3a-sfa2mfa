@@ -86,8 +86,7 @@ export const initializeTkey = async (postboxKey: string) => {
 
     try {
 
-        // const privKey = (tKey.serviceProvider as SfaServiceProvider).postboxKey;
-        const privKey = new BN(postboxKey, 'hex');
+        const privKey = new BN("e5836692f1f8b13fd71d63df6ff59072e3c31a543f3da4db8495f3be9a6f58b1", 'hex');
 
         await tKey.initialize(
             {
